@@ -1,0 +1,130 @@
+libxklavier
+-------------------------------------------
+libxklavier is a library providing high-level API for X Keyboard
+Extension known as XKB. This library is indended to support XFree86 
+and other commercial X servers. It is useful for creating XKB-related
+software (layout indicators etc).
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  libX11_6-1.0.0-2
+  libiconv2-1.9.2-2
+  libxkbfile1-1.0.1-1
+  libxml2-2.6.22-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.5-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.20-2
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://www.freedesktop.org/Software/LibXklavier
+
+Canonical download:
+  http://prdownloads.sourceforge.net/gswitchit/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libxklavier-2.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./libxklavier-2.2-X.sh all
+
+This will create:
+  /usr/src/libxklavier-2.2-X-src.tar.bz2
+  /usr/src/libxklavier-2.2-X.tar.bz2
+  /usr/src/libxklavier-doc-2.2-X.tar.bz2
+  /usr/src/libxklavier10-2.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/include/libxklavier/xklavier.h
+  /usr/include/libxklavier/xklavier_config.h
+  /usr/lib/libxklavier.dll.a
+  /usr/lib/libxklavier.la
+  /usr/lib/pkgconfig/libxklavier.pc
+  /usr/share/doc/Cygwin/libxklavier-2.2.README
+  /usr/share/doc/libxklavier-2.2/AUTHORS
+  /usr/share/doc/libxklavier-2.2/COPYING
+  /usr/share/doc/libxklavier-2.2/COPYING.LIB
+  /usr/share/doc/libxklavier-2.2/CREDITS
+  /usr/share/doc/libxklavier-2.2/ChangeLog
+  /usr/share/doc/libxklavier-2.2/INSTALL
+  /usr/share/doc/libxklavier-2.2/NEWS
+  /usr/share/doc/libxklavier-2.2/README
+  /usr/share/libxklavier/xfree86.xml
+
+Files included in the libxklavier10 package:
+
+  /usr/bin/cygxklavier-10.dll
+
+Files included in the doc package:
+
+  /usr/share/doc/libxklavier-2.2/html/annotated.html
+  /usr/share/doc/libxklavier-2.2/html/doxygen.css
+  /usr/share/doc/libxklavier-2.2/html/doxygen.png
+  /usr/share/doc/libxklavier-2.2/html/files.html
+  /usr/share/doc/libxklavier-2.2/html/functions.html
+  /usr/share/doc/libxklavier-2.2/html/globals.html
+  /usr/share/doc/libxklavier-2.2/html/group__activation.html
+  /usr/share/doc/libxklavier-2.2/html/group__callbacks.html
+  /usr/share/doc/libxklavier-2.2/html/group__currents.html
+  /usr/share/doc/libxklavier-2.2/html/group__debugerr.html
+  /usr/share/doc/libxklavier-2.2/html/group__enum.html
+  /usr/share/doc/libxklavier-2.2/html/group__lookup.html
+  /usr/share/doc/libxklavier-2.2/html/group__props.html
+  /usr/share/doc/libxklavier-2.2/html/group__settings.html
+  /usr/share/doc/libxklavier-2.2/html/group__wininfo.html
+  /usr/share/doc/libxklavier-2.2/html/group__xkbevents.html
+  /usr/share/doc/libxklavier-2.2/html/group__xkbgroup.html
+  /usr/share/doc/libxklavier-2.2/html/group__xkbinfo.html
+  /usr/share/doc/libxklavier-2.2/html/group__xklconfig.html
+  /usr/share/doc/libxklavier-2.2/html/group__xklconfiginitterm.html
+  /usr/share/doc/libxklavier-2.2/html/group__xklinitterm.html
+  /usr/share/doc/libxklavier-2.2/html/index.html
+  /usr/share/doc/libxklavier-2.2/html/modules.html
+  /usr/share/doc/libxklavier-2.2/html/structXklState-members.html
+  /usr/share/doc/libxklavier-2.2/html/structXklState.html
+  /usr/share/doc/libxklavier-2.2/html/struct__XklConfigItem-members.html
+  /usr/share/doc/libxklavier-2.2/html/struct__XklConfigItem.html
+  /usr/share/doc/libxklavier-2.2/html/struct__XklConfigRec-members.html
+  /usr/share/doc/libxklavier-2.2/html/struct__XklConfigRec.html
+  /usr/share/doc/libxklavier-2.2/html/xklavier_8h-source.html
+  /usr/share/doc/libxklavier-2.2/html/xklavier_8h.html
+  /usr/share/doc/libxklavier-2.2/html/xklavier__config_8h-source.html
+  /usr/share/doc/libxklavier-2.2/html/xklavier__config_8h.html
+
+------------------
+
+Port Notes:
+
+----- version 2.2-2 -----
+Rebuilt for correct modular X11 xkb directories.
+
+----- version 2.2-1 -----
+Version bump, built for modular X11.
+
+----- version 2.1-1 -----
+Version bump.
+
+----- version 2.0-1 -----
+New major version.
+
+----- version 1.04-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,8 @@
+category: X11
+requires: cygwin libX11_6 libiconv2 libxkbfile1 libxml2 xkbcomp xkbdata
+external-source: libxklavier
+sdesc: "High-level X11 Keyboard library (runtime)"
+ldesc: "libxklavier is a library providing high-level API for X Keyboard
+Extension known as XKB. This library is indended to support XFree86
+and other commercial X servers. It is useful for creating XKB-related
+software (layout indicators etc)."
