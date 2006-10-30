@@ -1,5 +1,4 @@
 category: X11
-requires: libX11 libiconv libxkbfile libxml2-devel
 sdesc: "High-level X11 Keyboard library (development)"
 ldesc: "libxklavier is a library providing high-level API for X Keyboard
 Extension known as XKB. This library is indended to support XFree86

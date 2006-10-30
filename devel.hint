@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin glib2 libX11_6 libxkbfile1 libxml2 xkbcomp xkbdata
+requires: cygwin glib2-devel libX11-devel libxkbfile-devel libxml2-devel
 external-source: libxklavier
 sdesc: "High-level X11 Keyboard library (runtime)"
 ldesc: "libxklavier is a library providing high-level API for X Keyboard
