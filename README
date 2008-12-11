@@ -6,24 +6,28 @@ and other commercial X servers. It is useful for creating XKB-related
 software (layout indicators etc).
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  glib2-2.16.3-1
-  libX11_6-1.1.3-1
-  libxkbfile1-1.0.3-1
-  libxml2-2.6.32-1
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.3-1
+  libX11_6-1.1.5-1
+  libXi6-1.1.4-1
+  libxkbfile1-1.0.5-1
+  libxml2-2.7.2-1
+  xkbcomp-1.0.5-1
+  xkeyboard-config-1.4-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.11-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.10-1
-  libtool-2.2.2-2
+  gnome-common-2.24.0-1
+  gtk-doc-1.11-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -35,33 +39,30 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libxklavier-3.6-X-src.tar.bz2
+  unpack libxklavier-3.8-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libxklavier-3.6-X.cygport all
+  cygport ./libxklavier-3.8-X.cygport all
 
 This will create:
-  /usr/src/libxklavier-3.6-X-src.tar.bz2
-  /usr/src/libxklavier-3.6-X.tar.bz2
-  /usr/src/libxklavier-devel-3.6-X.tar.bz2
-  /usr/src/libxklavier12-3.6-X.tar.bz2
+  /usr/src/libxklavier-3.8-X-src.tar.bz2
+  /usr/src/libxklavier-devel-3.8-X.tar.bz2
+  /usr/src/libxklavier12-3.8-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary packages:
 
-(libxklavier)
-  /usr/share/doc/libxklavier-3.6/AUTHORS
-  /usr/share/doc/libxklavier-3.6/COPYING.LIB
-  /usr/share/doc/libxklavier-3.6/CREDITS
-  /usr/share/doc/libxklavier-3.6/ChangeLog
-  /usr/share/doc/libxklavier-3.6/INSTALL
-  /usr/share/doc/libxklavier-3.6/NEWS
-  /usr/share/doc/libxklavier-3.6/README
-
 (libxklavier12)
   /usr/bin/cygxklavier-12.dll
+  /usr/share/doc/libxklavier-3.8/AUTHORS
+  /usr/share/doc/libxklavier-3.8/COPYING.LIB
+  /usr/share/doc/libxklavier-3.8/CREDITS
+  /usr/share/doc/libxklavier-3.8/ChangeLog
+  /usr/share/doc/libxklavier-3.8/INSTALL
+  /usr/share/doc/libxklavier-3.8/NEWS
+  /usr/share/doc/libxklavier-3.8/README
 
 (libxklavier-devel)
   /usr/include/libxklavier/xkl_config_item.h
@@ -93,6 +94,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 3.8-1 -----
+Version bump.
 
 ----- version 3.6-1 -----
 Version bump.
