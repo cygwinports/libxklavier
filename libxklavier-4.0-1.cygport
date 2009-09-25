@@ -3,8 +3,8 @@ inherit gnome2
 DESCRIPTION="High-level XKB library"
 HOMEPAGE="http://freedesktop.org/wiki/Software/LibXklavier"
 
-PKG_NAMES="${PN} ${PN}12 ${PN}-devel"
-libxklavier12_CONTENTS="usr/bin/*-12.dll usr/share/doc/"
+PKG_NAMES="${PN} ${PN}15 ${PN}-devel"
+libxklavier15_CONTENTS="usr/bin/*-15.dll usr/share/doc/"
 libxklavier_devel_CONTENTS='usr/include/ usr/lib/ usr/share/gtk-doc/'
 
 CYGCONF_ARGS="

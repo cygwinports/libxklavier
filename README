@@ -6,30 +6,30 @@ and other commercial X servers. It is useful for creating XKB-related
 software (layout indicators etc).
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-61
   iso-codes
   libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
-  libX11_6-1.2-10
+  libglib2.0_0-2.20.5-1
+  libX11_6-1.2.2-1
   libXi6-1.2.1-10
   libxkbfile1-1.0.5-10
-  libxml2-2.7.3-10
+  libxml2-2.7.3-11
   xkbcomp-1.0.5-1
-  xkeyboard-config-1.4-1
+  xkeyboard-config-1.6-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  gawk-3.1.7-1
   gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  gnome-common-2.26.0-2
   gtk-doc-1.11-2
-  libtool-2.2.6a-2
+  libtool-2.2.7a-14
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -41,60 +41,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libxklavier-3.9-X-src.tar.bz2
+  unpack libxklavier-4.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libxklavier-3.9-X.cygport all
+  cygport ./libxklavier-4.0-X.cygport all
 
 This will create:
-  /usr/src/libxklavier-3.9-X-src.tar.bz2
-  /usr/src/libxklavier-devel-3.9-X.tar.bz2
-  /usr/src/libxklavier12-3.9-X.tar.bz2
+  /usr/src/libxklavier-4.0-X-src.tar.bz2
+  /usr/src/libxklavier-devel-4.0-X.tar.bz2
+  /usr/src/libxklavier15-4.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libxklavier12)
-  /usr/bin/cygxklavier-12.dll
-  /usr/share/doc/libxklavier/AUTHORS
-  /usr/share/doc/libxklavier/COPYING.LIB
-  /usr/share/doc/libxklavier/CREDITS
-  /usr/share/doc/libxklavier/ChangeLog
-  /usr/share/doc/libxklavier/NEWS
-  /usr/share/doc/libxklavier/README
-
-(libxklavier-devel)
-  /usr/include/libxklavier/xkl_config_item.h
-  /usr/include/libxklavier/xkl_config_rec.h
-  /usr/include/libxklavier/xkl_config_registry.h
-  /usr/include/libxklavier/xkl_engine.h
-  /usr/include/libxklavier/xkl_engine_marshal.h
-  /usr/include/libxklavier/xklavier.h
-  /usr/lib/libxklavier.dll.a
-  /usr/lib/libxklavier.la
-  /usr/lib/pkgconfig/libxklavier.pc
-  /usr/share/gtk-doc/html/libxklavier/ch01.html
-  /usr/share/gtk-doc/html/libxklavier/ch02.html
-  /usr/share/gtk-doc/html/libxklavier/home.png
-  /usr/share/gtk-doc/html/libxklavier/index.html
-  /usr/share/gtk-doc/html/libxklavier/index.sgml
-  /usr/share/gtk-doc/html/libxklavier/left.png
-  /usr/share/gtk-doc/html/libxklavier/libxklavier-XklConfigItem.html
-  /usr/share/gtk-doc/html/libxklavier/libxklavier-XklConfigRec.html
-  /usr/share/gtk-doc/html/libxklavier/libxklavier-XklConfigRegistry.html
-  /usr/share/gtk-doc/html/libxklavier/libxklavier-XklEngine.html
-  /usr/share/gtk-doc/html/libxklavier/libxklavier-xklavier.html
-  /usr/share/gtk-doc/html/libxklavier/libxklavier.devhelp
-  /usr/share/gtk-doc/html/libxklavier/libxklavier.devhelp2
-  /usr/share/gtk-doc/html/libxklavier/right.png
-  /usr/share/gtk-doc/html/libxklavier/style.css
-  /usr/share/gtk-doc/html/libxklavier/up.png
-
-------------------
-
 Port Notes:
+
+----- version 4.0-1 -----
+ABI version bump.
 
 ----- version 3.9-1 -----
 Initial release for Cygwin 1.7.
