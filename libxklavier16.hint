@@ -1,8 +1,0 @@
-category: X11
-requires: iso-codes libglib2.0_0 libintl8 libX11_6 libXi6 libxkbfile1 libxml2 xkbcomp xkeyboard-config
-external-source: libxklavier
-sdesc: "High-level X11 Keyboard library (runtime)"
-ldesc: "libxklavier is a library providing high-level API for X Keyboard
-Extension known as XKB. This library is indended to support XFree86
-and other commercial X servers. It is useful for creating XKB-related
-software (layout indicators etc)."

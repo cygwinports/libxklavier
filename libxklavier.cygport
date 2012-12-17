@@ -1,9 +1,20 @@
 inherit gnome2
 
-DESCRIPTION="High-level XKB library"
+NAME="libxklavier"
+VERSION=5.3
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="High-level X11 Keyboard library"
+DESCRIPTION="libxklavier is a library providing high-level API for X Keyboard
+Extension known as XKB. This library is indended to support XFree86 and other
+commercial X servers. It is useful for creating XKB-related software (layout
+indicators etc)."
 HOMEPAGE="http://freedesktop.org/wiki/Software/LibXklavier"
 
+PATCH_URI="5.3-symbols.patch"
+
 PKG_NAMES="${PN}16 ${PN}-devel girepository-Xkl1.0"
+libxklavier16_REQUIRES="iso-codes xkbcomp xkeyboard-config"
 libxklavier16_CONTENTS="usr/bin/*-16.dll usr/share/doc/"
 libxklavier_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 girepository_Xkl1_0_CONTENTS="usr/*/gir*/Xkl-1.0.*"
